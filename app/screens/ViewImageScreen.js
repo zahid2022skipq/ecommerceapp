@@ -5,7 +5,6 @@ function ViewImageScreen(props) {
   return (
     <View style={styles.container}>
       <View style={styles.closeIcon}></View>
-
       <View style={styles.deleteIcon}></View>
       <Image
         resizeMode="contain"
