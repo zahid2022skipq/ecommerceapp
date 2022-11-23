@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
   background: {
     flex: 1,
     justifyContent: "flex-end",
+    alignItems: "center",
   },
   loginButton: {
     width: "100%",
