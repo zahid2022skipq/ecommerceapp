@@ -1,8 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, Image, View } from "react-native";
-import { Button } from "react-native-web";
 
-export default function App() {
+export default function Screen() {
   return (
     <View style={styles.container}>
       <Image
