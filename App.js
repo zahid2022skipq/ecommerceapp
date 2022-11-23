@@ -20,7 +20,7 @@ export default function App() {
       ></View>
       <Image
         source={require("./assets/chair.jpg")}
-        style={{ height: "75%", width: "80%" }}
+        style={{ height: "75%", width: "100%" }}
       />
 
       <StatusBar style="auto" />
@@ -31,7 +31,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: "row",
+    flexWrap: "wrap",
     backgroundColor: "#000",
-    alignItems: "center",
+    justifyContent: "space-between",
   },
 });
