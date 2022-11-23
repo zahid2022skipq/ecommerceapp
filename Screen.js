@@ -13,9 +13,7 @@ export default function Screen() {
         source={require("./assets/logo-red.png")}
         style={{ height: 100, width: 100, position: "absolute", top: 75 }}
       />
-      <Text style={{ position: "absolute", top: 175 }}>
-        Sell what ypu don't need
-      </Text>
+
       <View
         style={{
           position: "absolute",
