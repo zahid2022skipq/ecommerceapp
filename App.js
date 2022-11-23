@@ -1,22 +1,9 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, Image, View } from "react-native";
-import { Button } from "react-native-web";
+import { StyleSheet, Image, View } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image
-        source={require("./assets/background.jpg")}
-        style={{ height: "100%", width: "100%" }}
-      />
-
-      <Image
-        source={require("./assets/logo-red.png")}
-        style={{ height: 100, width: 100, position: "absolute", top: 75 }}
-      />
-      <Text style={{ position: "absolute", top: 175 }}>
-        Sell what ypu don't need
-      </Text>
       <View
         style={{
           position: "absolute",
@@ -35,6 +22,11 @@ export default function App() {
           top: 800,
         }}
       ></View>
+      <Image
+        source={require("./assets/logo-red.png")}
+        style={{ height: 100, width: 100, position: "absolute", top: 75 }}
+      />
+
       <StatusBar style="auto" />
     </View>
   );
