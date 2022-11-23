@@ -9,7 +9,7 @@ export default function App() {
           position: "absolute",
           backgroundColor: "tomato",
           height: 50,
-          width: "100%",
+          width: 50,
           top: 750,
         }}
       ></View>
@@ -18,7 +18,7 @@ export default function App() {
           position: "absolute",
           backgroundColor: "#42CBAC",
           height: 50,
-          width: "100%",
+          width: 50,
           top: 800,
         }}
       ></View>
