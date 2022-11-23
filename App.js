@@ -6,25 +6,21 @@ export default function App() {
     <View style={styles.container}>
       <View
         style={{
-          position: "absolute",
           backgroundColor: "tomato",
           height: 50,
           width: 50,
-          top: 750,
         }}
       ></View>
       <View
         style={{
-          position: "absolute",
           backgroundColor: "#42CBAC",
           height: 50,
           width: 50,
-          top: 800,
         }}
       ></View>
       <Image
-        source={require("./assets/logo-red.png")}
-        style={{ height: 100, width: 100, position: "absolute", top: 75 }}
+        source={require("./assets/chair.jpg")}
+        style={{ height: "75%", width: "80%" }}
       />
 
       <StatusBar style="auto" />
@@ -35,6 +31,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "#000",
     alignItems: "center",
   },
 });
