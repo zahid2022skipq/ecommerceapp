@@ -5,6 +5,7 @@ function ViewImageScreen(props) {
   return (
     <View style={styles.container}>
       <View style={styles.closeIcon}></View>
+      <View style={styles.moreIcon}></View>
       <Image
         resizeMode="contain"
         style={styles.image}
@@ -18,7 +19,10 @@ const styles = StyleSheet.create({
   closeIcon: {
     backgroundColor: "#fc5c65",
     height: 50,
-    width: "50",
+    width: 50,
+    position: "absolute",
+    top: 40,
+    left: 30,
   },
   container: {
     backgroundColor: "#000",
@@ -27,6 +31,11 @@ const styles = StyleSheet.create({
   image: {
     height: "100%",
     width: "100%",
+  },
+  moreIcon: {
+    backgroundColor: "#4ecdc4",
+    height: 50,
+    width: 50,
   },
 });
 
