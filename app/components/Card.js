@@ -9,8 +9,10 @@ function Card({ title, subTitle, image }) {
   return (
     <View style={styles.card}>
       <Image style={styles.img} source={image} />
-      <AppText>{title}</AppText>
-      <AppText>{subTitle}</AppText>
+      <View style={styles.detailsContainer}>
+        <AppText>{title}</AppText>
+        <AppText>{subTitle}</AppText>
+      </View>
     </View>
   );
 }
@@ -20,6 +22,9 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     borderRadius: 20,
     marginBottom: 20,
+  },
+  detailsContainer: {
+    padding: 20,
   },
   img: {
     height: 200,
