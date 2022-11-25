@@ -6,7 +6,7 @@ import { colors } from "../config/colors";
 function Card({ title, subTitle, image }) {
   return (
     <View style={styles.card}>
-      <Image source={image} />
+      <Image style={styles.img} source={image} />
       <Text>{title}</Text>
       <Text>{subTitle}</Text>
     </View>
@@ -18,6 +18,11 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     borderRadius: 20,
     marginBottom: 20,
+  },
+  img: {
+    height: 200,
+    width: "100%",
+    borderRadius: 20,
   },
 });
 
