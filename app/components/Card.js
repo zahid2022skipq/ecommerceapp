@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     borderRadius: 20,
     marginBottom: 20,
+    overflow: "hidden",
   },
   detailsContainer: {
     padding: 20,
@@ -29,7 +30,6 @@ const styles = StyleSheet.create({
   img: {
     height: 200,
     width: "100%",
-    borderRadius: 20,
   },
   subTitle: {
     color: colors.secondary,
