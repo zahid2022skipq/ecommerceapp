@@ -11,7 +11,7 @@ function Card({ title, subTitle, image }) {
       <Image style={styles.img} source={image} />
       <View style={styles.detailsContainer}>
         <AppText style={styles.title}>{title}</AppText>
-        <AppText>{subTitle}</AppText>
+        <AppText style={styles.subTitle}>{subTitle}</AppText>
       </View>
     </View>
   );
@@ -30,6 +30,9 @@ const styles = StyleSheet.create({
     height: 200,
     width: "100%",
     borderRadius: 20,
+  },
+  subTitle: {
+    color: colors.secondary,
   },
   title: {
     marginBottom: 20,
