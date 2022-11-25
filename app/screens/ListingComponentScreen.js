@@ -27,6 +27,8 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   title: {
+    fontSize: 24,
+    fontWeight: 500,
     marginBottom: 20,
   },
 });
