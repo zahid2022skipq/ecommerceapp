@@ -10,7 +10,7 @@ function Card({ title, subTitle, image }) {
     <View style={styles.card}>
       <Image style={styles.img} source={image} />
       <View style={styles.detailsContainer}>
-        <AppText>{title}</AppText>
+        <AppText style={styles.title}>{title}</AppText>
         <AppText>{subTitle}</AppText>
       </View>
     </View>
@@ -30,6 +30,9 @@ const styles = StyleSheet.create({
     height: 200,
     width: "100%",
     borderRadius: 20,
+  },
+  title: {
+    marginBottom: 20,
   },
 });
 
