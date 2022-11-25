@@ -4,7 +4,11 @@ import ViewImageScreen from "./app/screens/ViewImageScreen";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 
 export default function App() {
-  return <WelcomeScreen />;
+  return (
+    <View
+      style={{ backgroundColor: "#f8f4f4", padding: 20, paddingTop: 100 }}
+    ></View>
+  );
 }
 
 const styles = StyleSheet.create({});
