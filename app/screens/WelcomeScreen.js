@@ -19,8 +19,9 @@ function WelcomeScreen(props) {
           handleBtn={() => console.log("Tapped Login")}
         />
         <AppButton
-          title="reister"
+          title="register"
           handleBtn={() => console.log("Tapped Register")}
+          color="secondary"
         />
       </View>
     </ImageBackground>
