@@ -5,6 +5,7 @@ import { colors } from "../config/colors";
 function WelcomeScreen(props) {
   return (
     <ImageBackground
+      blurRadius={5}
       style={styles.background}
       source={require("../assets/background.jpg")}
     >
