@@ -17,7 +17,7 @@ function ListingComponentScreen(props) {
 }
 
 const styles = StyleSheet.create({
-  detailsContainer: {},
+  detailsContainer: { padding: 20 },
   image: {
     width: "100%",
     height: 200,
