@@ -6,6 +6,7 @@ import { colors } from "../config/colors";
 function Card({ title, subTitle, image }) {
   return (
     <View style={styles.card}>
+      <Image source={image} />
       <Text>{title}</Text>
       <Text>{subTitle}</Text>
     </View>
