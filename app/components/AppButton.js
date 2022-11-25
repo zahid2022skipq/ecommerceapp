@@ -3,10 +3,9 @@ import { TouchableOpacity, StyleSheet, Text } from "react-native-web";
 import { colors } from "../config/colors";
 
 function AppButton({ title, handleBtn, color = "primary" }) {
-  console.log("Color " + title + " " + colors[color]);
   return (
     <TouchableOpacity
-      style={[styles.button, { backgrounColor: `${colors[color]}` }]}
+      style={[styles.button, { backgroundColor: colors[color] }]}
       onPress={handleBtn}
     >
       <Text>{title}</Text>
