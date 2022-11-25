@@ -1,11 +1,10 @@
 import React from "react";
-import { Image } from "react-native";
-import { View, StyleSheet } from "react-native-web";
+
+import { View, StyleSheet, Text, Image } from "react-native";
 
 function Card({ title, subTitle, image }) {
   return (
     <View>
-      <Image source={require(image)} />
       <Text>{title}</Text>
       <Text>{subTitle}</Text>
     </View>
