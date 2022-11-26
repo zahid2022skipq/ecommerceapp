@@ -12,7 +12,7 @@ function ListingComponentScreen(props) {
       <View style={styles.detailsContainer}>
         <AppText style={styles.title}>Red Jacket for sell</AppText>
         <AppText style={styles.subTitle}>$100</AppText>
-        <View>
+        <View style={styles.userContainer}>
           <ListItem
             image={require("../assets/mal.jpg")}
             title="John Doe"
@@ -39,6 +39,9 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 500,
     marginBottom: 20,
+  },
+  userContainer: {
+    marginVertical: 40,
   },
 });
 
