@@ -13,7 +13,7 @@ function ListingComponentScreen(props) {
         <AppText style={styles.title}>Red Jacket for sell</AppText>
         <AppText style={styles.subTitle}>$100</AppText>
         <ListItem
-          image={require("../assets/male.jpg")}
+          image={require("../assets/mal.jpg")}
           title="John Doe"
           subTitle="6 Listings"
         />
