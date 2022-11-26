@@ -7,7 +7,7 @@ function ListItem({ title, subTitle, image }) {
     <View style={styles.container}>
       <Image style={styles.image} source={image} />
       <View>
-        <AppText>{title}</AppText>
+        <AppText style={styles.title}>{title}</AppText>
         <AppText>{subTitle}</AppText>
       </View>
     </View>
@@ -24,5 +24,6 @@ const styles = StyleSheet.create({
     borderRadius: 35,
     marginRight: 10,
   },
+  title: { fontWeight: 600 },
 });
 export default ListItem;
