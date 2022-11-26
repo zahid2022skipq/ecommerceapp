@@ -1,5 +1,11 @@
 import React from "react";
-import { FlatList } from "react-native";
+import {
+  FlatList,
+  StyleSheet,
+  StatusBar,
+  Platform,
+  SafeAreaView,
+} from "react-native";
 import ListItem from "../components/ListItem";
 
 const data = [
@@ -25,17 +31,19 @@ const data = [
 
 function MessagesScreen(props) {
   return (
-    <FlatList
-      data={data}
-      keyExtractor={(message) => message.id}
-      renderItem={({ item }) => (
-        <ListItem
-          title={item.title}
-          subTitle={item.description}
-          image={item.image}
-        />
-      )}
-    />
+    <SafeAreaView>
+      <FlatList
+        data={data}
+        keyExtractor={(message) => message.id}
+        renderItem={({ item }) => (
+          <ListItem
+            title={item.title}
+            subTitle={item.description}
+            image={item.image}
+          />
+        )}
+      />
+    </SafeAreaView>
   );
 }
 
