@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     borderRadius: 35,
     marginRight: 10,
   },
-  title: { fontWeight: 600 },
   subTitle: { color: colors.mediumGray },
+  title: { fontWeight: 600 },
 });
 export default ListItem;
