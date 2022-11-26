@@ -6,7 +6,11 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 function ViewImageScreen(props) {
   return (
     <View style={styles.container}>
-      <View style={styles.closeIcon}></View>
+      <MaterialCommunityIcons
+        name="close"
+        color={colors.primary}
+        style={styles.closeIcon}
+      />
       <View style={styles.deleteIcon}></View>
       <Image
         resizeMode="contain"
@@ -19,9 +23,6 @@ function ViewImageScreen(props) {
 
 const styles = StyleSheet.create({
   closeIcon: {
-    backgroundColor: colors.primary,
-    height: 50,
-    width: 50,
     position: "absolute",
     top: 40,
     left: 30,
