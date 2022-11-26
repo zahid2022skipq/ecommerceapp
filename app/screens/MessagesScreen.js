@@ -47,4 +47,10 @@ function MessagesScreen(props) {
   );
 }
 
+const styles = StyleSheet.create({
+  screen: {
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+  },
+});
+
 export default MessagesScreen;
