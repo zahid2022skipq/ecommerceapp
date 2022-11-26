@@ -5,5 +5,9 @@ function ListItem(props) {
   return <View></View>;
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: "row",
+  },
+});
 export default ListItem;
