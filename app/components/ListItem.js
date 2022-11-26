@@ -18,7 +18,6 @@ function ListItem({ title, subTitle, image }) {
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    marginVertical: 20,
   },
   image: {
     width: 70,
