@@ -12,7 +12,11 @@ function ListingComponentScreen(props) {
       <View style={styles.detailsContainer}>
         <AppText style={styles.title}>Red Jacket for sell</AppText>
         <AppText style={styles.subTitle}>$100</AppText>
-        <ListItem image={require("../assets/male.jpg")} />
+        <ListItem
+          image={require("../assets/male.jpg")}
+          title="John Doe"
+          subTitle="6 Listings"
+        />
       </View>
     </View>
   );
