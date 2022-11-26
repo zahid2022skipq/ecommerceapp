@@ -1,5 +1,6 @@
 import React from "react";
 import { View, StyleSheet, Image } from "react-native";
+import { colors } from "../config/colors";
 import AppText from "./AppText";
 
 function ListItem({ title, subTitle, image }) {
@@ -25,6 +26,6 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   title: { fontWeight: 600 },
-  subTitle: { color: "#6e6969" },
+  subTitle: { color: colors.mediumGray },
 });
 export default ListItem;
