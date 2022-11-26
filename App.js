@@ -14,7 +14,7 @@ import ListingComponentScreen from "./app/screens/ListingComponentScreen";
 // </View>
 
 export default function App() {
-  return <ListingComponentScreen />;
+  return <ViewImageScreen />;
 }
 
 const styles = StyleSheet.create({});
