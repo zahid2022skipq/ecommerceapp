@@ -4,7 +4,7 @@ import { View, StyleSheet, Image } from "react-native";
 function ListItem({ title, subTitle, image }) {
   return (
     <View style={styles.container}>
-      <Image source={image} />
+      <Image style={styles.image} source={image} />
     </View>
   );
 }
@@ -12,6 +12,10 @@ function ListItem({ title, subTitle, image }) {
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
+  },
+  image: {
+    width: 70,
+    height: 70,
   },
 });
 export default ListItem;
