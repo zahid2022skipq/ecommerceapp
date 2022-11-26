@@ -31,7 +31,7 @@ const data = [
 
 function MessagesScreen(props) {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.screen}>
       <FlatList
         data={data}
         keyExtractor={(message) => message.id}
