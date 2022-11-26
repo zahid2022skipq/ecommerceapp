@@ -9,6 +9,7 @@ function ViewImageScreen(props) {
       <MaterialCommunityIcons
         name="close"
         color={colors.primary}
+        size={30}
         style={styles.closeIcon}
       />
       <View style={styles.deleteIcon}></View>
