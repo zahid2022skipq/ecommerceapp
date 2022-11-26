@@ -23,7 +23,7 @@ const data = [
 ];
 
 function MessagesScreen(props) {
-  return <FlatList data={[]} />;
+  return <FlatList data={data} keyExtractor={(message) => message.id} />;
 }
 
 export default MessagesScreen;
