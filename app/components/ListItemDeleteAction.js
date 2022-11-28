@@ -1,10 +1,10 @@
 import React from "react";
-import { View, StyleSheet, TouchableOpacity } from "react-native";
+import { View, StyleSheet, TouchableWithoutFeedback } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { colors } from "../config/colors";
-function ListItemDeleteAction({ onPress }) {
+function ListItemDeleteAction({ handleDelete }) {
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableWithoutFeedback onPress={handleDelete}>
       <View style={styles.container}>
         <MaterialCommunityIcons
           name="trash-can"
@@ -12,7 +12,7 @@ function ListItemDeleteAction({ onPress }) {
           color={colors.primary}
         />
       </View>
-    </TouchableOpacity>
+    </TouchableWithoutFeedback>
   );
 }
 
