@@ -52,12 +52,14 @@ function MessagesScreen(props) {
           />
         )}
         refreshing={refreshing}
-        onRefresh={setData({
-          id: "3",
-          title: "T3",
-          description: "D3",
-          image: require("../assets/mal.jpg"),
-        })}
+        onRefresh={() =>
+          setData({
+            id: "3",
+            title: "T3",
+            description: "D3",
+            image: require("../assets/mal.jpg"),
+          })
+        }
         ItemSeparatorComponent={ListItemSeparator}
       />
     </Screen>
