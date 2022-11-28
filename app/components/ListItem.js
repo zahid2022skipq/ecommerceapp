@@ -28,7 +28,7 @@ function ListItem({
           {image && <Image style={styles.image} source={image} />}
           <View style={styles.detailsContainer}>
             <AppText style={styles.title}>{title}</AppText>
-            <AppText style={styles.subTitle}>{subTitle}</AppText>
+            {subTitle && <AppText style={styles.subTitle}>{subTitle}</AppText>}
           </View>
         </View>
       </TouchableHighlight>
@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
   },
   detailsContainer: {
     marginLeft: 10,
+    justifyContent: "center",
   },
   image: {
     width: 70,
