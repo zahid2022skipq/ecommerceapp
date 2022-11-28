@@ -1,7 +1,8 @@
 import React from "react";
+import { View } from "react-native";
 
 function ListItemDeleteAction(props) {
-  return <div></div>;
+  return <View></View>;
 }
 
 export default ListItemDeleteAction;
