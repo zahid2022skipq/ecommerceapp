@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import Icon from "./app/components/Icon";
 import ListItem from "./app/components/ListItem";
 import Screen from "./app/components/Screen";
+import AccountScreen from "./app/screens/AccountScreen";
 import MessagesScreen from "./app/screens/MessagesScreen";
 
 // <View style={{ backgroundColor: "#f8f4f4", padding: 20, paddingTop: 100 }}>
@@ -13,11 +14,7 @@ import MessagesScreen from "./app/screens/MessagesScreen";
 // </View>
 
 export default function App() {
-  return (
-    <Screen>
-      <ListItem title="My Name" ImageComponent={<Icon name="email" />} />
-    </Screen>
-  );
+  return <AccountScreen />;
 }
 
 const styles = StyleSheet.create({});
