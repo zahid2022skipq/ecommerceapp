@@ -29,6 +29,7 @@ const initialData = [
 
 function MessagesScreen(props) {
   const [data, setData] = useState(initialData);
+  const [refreshing, setRefreshing] = useState(false);
 
   const handleDelete = (item) => {
     const newData = data.filter((d) => item.id !== d.id);
