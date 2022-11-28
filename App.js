@@ -14,7 +14,7 @@ import MessagesScreen from "./app/screens/MessagesScreen";
 export default function App() {
   return (
     <Screen>
-      <Icon name="email" size={50} backgroundColor="red" iconColor="white" />
+      <Icon name="email" size={100} />
     </Screen>
   );
 }
