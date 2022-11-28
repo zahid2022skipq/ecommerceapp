@@ -15,11 +15,7 @@ import MessagesScreen from "./app/screens/MessagesScreen";
 export default function App() {
   return (
     <Screen>
-      <ListItem
-        title="My Name"
-        subTitle="Subtitle"
-        ImageComponent={<Icon name="email" />}
-      />
+      <ListItem title="My Name" ImageComponent={<Icon name="email" />} />
     </Screen>
   );
 }
