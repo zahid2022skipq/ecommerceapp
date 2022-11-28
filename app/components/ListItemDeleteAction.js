@@ -1,16 +1,18 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, TouchableOpacity } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { colors } from "../config/colors";
-function ListItemDeleteAction(props) {
+function ListItemDeleteAction({ onPress }) {
   return (
-    <View>
-      <MaterialCommunityIcons
-        name="trash-can"
-        size={30}
-        color={colors.primary}
-      />
-    </View>
+    <TouchableOpacity onPress={onPress}>
+      <View style={styles.container}>
+        <MaterialCommunityIcons
+          name="trash-can"
+          size={30}
+          color={colors.primary}
+        />
+      </View>
+    </TouchableOpacity>
   );
 }
 
