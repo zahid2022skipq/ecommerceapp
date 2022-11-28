@@ -5,6 +5,7 @@ import {
   StatusBar,
   Platform,
   SafeAreaView,
+  View,
 } from "react-native";
 import ListItem from "../components/ListItem";
 
@@ -44,6 +45,7 @@ function MessagesScreen(props) {
             image={item.image}
           />
         )}
+        ItemSeparatorComponent={() => <View />}
       />
     </Screen>
   );
