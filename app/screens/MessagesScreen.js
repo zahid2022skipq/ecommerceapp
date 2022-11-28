@@ -8,6 +8,8 @@ import {
 } from "react-native";
 import ListItem from "../components/ListItem";
 
+import Screen from "../components/Screen";
+
 const data = [
   {
     id: "1",
@@ -31,7 +33,7 @@ const data = [
 
 function MessagesScreen(props) {
   return (
-    <SafeAreaView style={styles.screen}>
+    <Screen>
       <FlatList
         data={data}
         keyExtractor={(message) => message.id}
@@ -43,14 +45,10 @@ function MessagesScreen(props) {
           />
         )}
       />
-    </SafeAreaView>
+    </Screen>
   );
 }
 
-const styles = StyleSheet.create({
-  screen: {
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-  },
-});
+const styles = StyleSheet.create({});
 
 export default MessagesScreen;
