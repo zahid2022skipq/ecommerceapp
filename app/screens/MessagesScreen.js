@@ -8,6 +8,7 @@ import {
   View,
 } from "react-native";
 import ListItem from "../components/ListItem";
+import ListItemSeparator from "../components/ListItemSeparator";
 
 import Screen from "../components/Screen";
 
@@ -45,9 +46,7 @@ function MessagesScreen(props) {
             image={item.image}
           />
         )}
-        ItemSeparatorComponent={() => (
-          <View style={{ width: "100%", height: 1, backgroundColor: "#000" }} />
-        )}
+        ItemSeparatorComponent={ListItemSeparator}
       />
     </Screen>
   );
