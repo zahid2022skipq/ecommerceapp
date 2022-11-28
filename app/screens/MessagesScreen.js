@@ -39,12 +39,12 @@ function MessagesScreen(props) {
             subTitle={item.description}
             image={item.image}
             onPress={() => console.log(item.description)}
+            renderRightActions={() => (
+              <ListItemDeleteAction onPress={() => handleDelete(item)} />
+            )}
           />
         )}
         ItemSeparatorComponent={ListItemSeparator}
-        renderRightActions={() => (
-          <ListItemDeleteAction onPress={() => console.log("Delete")} />
-        )}
       />
     </Screen>
   );
