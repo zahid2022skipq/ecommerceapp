@@ -5,7 +5,10 @@ import AppText from "./AppText";
 
 function ListItem({ title, subTitle, image }) {
   return (
-    <TouchableHighlight onPress={() => console.log(title + " pressed")}>
+    <TouchableHighlight
+      underlayColor={colors.light}
+      onPress={() => console.log(title + " pressed")}
+    >
       <View style={styles.container}>
         <Image style={styles.image} source={image} />
         <View>
