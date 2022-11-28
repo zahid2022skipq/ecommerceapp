@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
+import Screen from "./app/components/Screen";
 import MessagesScreen from "./app/screens/MessagesScreen";
 
 // <View style={{ backgroundColor: "#f8f4f4", padding: 20, paddingTop: 100 }}>
@@ -10,7 +11,7 @@ import MessagesScreen from "./app/screens/MessagesScreen";
 // </View>
 
 export default function App() {
-  return <MessagesScreen />;
+  return <Screen></Screen>;
 }
 
 const styles = StyleSheet.create({});
