@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
+import Icon from "./app/components/Icon";
 import Screen from "./app/components/Screen";
 import MessagesScreen from "./app/screens/MessagesScreen";
 
@@ -11,7 +12,11 @@ import MessagesScreen from "./app/screens/MessagesScreen";
 // </View>
 
 export default function App() {
-  return <Screen></Screen>;
+  return (
+    <Screen>
+      <Icon name="email" size={50} backgroundColor="red" iconColor="white" />
+    </Screen>
+  );
 }
 
 const styles = StyleSheet.create({});
