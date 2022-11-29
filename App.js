@@ -19,10 +19,14 @@ import MessagesScreen from "./app/screens/MessagesScreen";
 
 export default function App() {
   const [isNew, setIsNew] = useState(false);
-
+  const categories = [
+    { label: "Furniture", value: "Furniture" },
+    { label: "Cameras", value: "Cameras" },
+    { label: "Clothing", value: "Clothing" },
+  ];
   return (
     <Screen>
-      <AppPicker icon="apps" placeholder="Category" />
+      <AppPicker data={categories} icon="apps" placeholder="Category" />
       <AppTextInput icon="email" placeholder="Email" />
     </Screen>
   );
