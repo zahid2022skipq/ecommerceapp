@@ -17,6 +17,11 @@ function AppPicker({ icon, placeholder, ...otherprops }) {
         />
       )}
       <AppText>{placeholder}</AppText>
+      <MaterialCommunityIcons
+        name="chevron-down"
+        size={20}
+        color={colors.mediumGray}
+      />
     </View>
   );
 }
