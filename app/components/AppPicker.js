@@ -6,6 +6,7 @@ import {
   Platform,
   TouchableWithoutFeedback,
   Modal,
+  Button,
 } from "react-native";
 
 import { MaterialCommunityIcons } from "@expo/vector-icons";
@@ -34,7 +35,9 @@ function AppPicker({ icon, placeholder, ...otherprops }) {
           />
         </View>
       </TouchableWithoutFeedback>
-      <Modal visible={modalVisible}></Modal>
+      <Modal visible={modalVisible} animationType="fade">
+        <Button title="Close" onPress={() => setModalVisible(false)} />
+      </Modal>
     </React.Fragment>
   );
 }
