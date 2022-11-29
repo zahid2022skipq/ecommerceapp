@@ -34,7 +34,7 @@ function AppPicker({ icon, placeholder, ...otherprops }) {
           />
         </View>
       </TouchableWithoutFeedback>
-      <Modal visible={true}></Modal>
+      <Modal visible={modalVisible}></Modal>
     </React.Fragment>
   );
 }
