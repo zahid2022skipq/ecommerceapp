@@ -4,25 +4,30 @@ import { View, StyleSheet, TextInput, Platform } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { colors } from "../config/colors";
 import AppText from "./AppText";
+import { TouchableWithoutFeedback } from "react-native-gesture-handler";
 
 function AppPicker({ icon, placeholder, ...otherprops }) {
   return (
-    <View style={styles.container}>
-      {icon && (
-        <MaterialCommunityIcons
-          name={icon}
-          size={20}
-          color={colors.mediumGray}
-          style={styles.icon}
-        />
-      )}
-      <AppText style={styles.text}>{placeholder}</AppText>
-      <MaterialCommunityIcons
-        name="chevron-down"
-        size={20}
-        color={colors.mediumGray}
-      />
-    </View>
+    <React.Fragment>
+      <TouchableWithoutFeedback onPress={() => console.log("tapped")}>
+        <View style={styles.container}>
+          {icon && (
+            <MaterialCommunityIcons
+              name={icon}
+              size={20}
+              color={colors.mediumGray}
+              style={styles.icon}
+            />
+          )}
+          <AppText style={styles.text}>{placeholder}</AppText>
+          <MaterialCommunityIcons
+            name="chevron-down"
+            size={20}
+            color={colors.mediumGray}
+          />
+        </View>
+      </TouchableWithoutFeedback>
+    </React.Fragment>
   );
 }
 const styles = StyleSheet.create({
