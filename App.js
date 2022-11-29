@@ -22,8 +22,8 @@ export default function App() {
 
   return (
     <Screen>
-      <AppPicker placeholder="Category" />
-      <AppTextInput placeholder="Email" />
+      <AppPicker icon="apps" placeholder="Category" />
+      <AppTextInput icon="email" placeholder="Email" />
     </Screen>
   );
 }
