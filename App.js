@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { StyleSheet, Text, TextInput, View } from "react-native";
+import { StyleSheet, Switch, Text, TextInput, View } from "react-native";
 import AppTextInput from "./app/components/AppTextInput";
 import Icon from "./app/components/Icon";
 import ListItem from "./app/components/ListItem";
@@ -17,10 +17,11 @@ import MessagesScreen from "./app/screens/MessagesScreen";
 // </View>
 
 export default function App() {
-  const [fisrtName, setFirstName] = useState("");
+  const [isNew, setIsNew] = useState(false);
+
   return (
     <Screen>
-      <AppTextInput placeholder="First name" icon="email" />
+      <Switch value={isNew} onValueChange={(newValue) => setIsNew(newValue)} />
     </Screen>
   );
 }
