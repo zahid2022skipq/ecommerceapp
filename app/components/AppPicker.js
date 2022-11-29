@@ -13,6 +13,7 @@ import {
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { colors } from "../config/colors";
 import AppText from "./AppText";
+import PickerItem from "./PickerItem";
 
 function AppPicker({ icon, items, placeholder }) {
   const [modalVisible, setModalVisible] = useState(false);
@@ -41,7 +42,12 @@ function AppPicker({ icon, items, placeholder }) {
         <FlatList
           data={items}
           keyExtractor={(item) => item.value.toString()}
-          renderItem={({ item }) => <AppText>{item.value}</AppText>}
+          renderItem={({ item }) => (
+            <PickerItem
+              label={item.label}
+              onPress={() => console.log(item.value)}
+            />
+          )}
         />
       </Modal>
     </React.Fragment>

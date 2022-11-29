@@ -20,9 +20,9 @@ import MessagesScreen from "./app/screens/MessagesScreen";
 export default function App() {
   const [isNew, setIsNew] = useState(false);
   const categories = [
-    { label: "Furniture", value: "Furniture" },
-    { label: "Cameras", value: "Cameras" },
-    { label: "Clothing", value: "Clothing" },
+    { label: "Furniture", value: 1 },
+    { label: "Cameras", value: 2 },
+    { label: "Clothing", value: 3 },
   ];
   return (
     <Screen>
