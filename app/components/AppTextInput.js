@@ -7,7 +7,14 @@ import { colors } from "../config/colors";
 function AppTextInput({ icon, ...otherprops }) {
   return (
     <View style={styles.container}>
-      {icon && <MaterialCommunityIcons name={icon} />}
+      {icon && (
+        <MaterialCommunityIcons
+          name={icon}
+          size={20}
+          color={colors.mediumGray}
+          style={styles.icon}
+        />
+      )}
       <TextInput {...otherprops} />
     </View>
   );
@@ -20,6 +27,9 @@ const styles = StyleSheet.create({
     padding: 15,
     width: "100%",
     marginVertical: 10,
+  },
+  icon: {
+    marginRight: 20,
   },
   inputText: {
     fontSize: 18,

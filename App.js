@@ -20,7 +20,7 @@ export default function App() {
   const [fisrtName, setFirstName] = useState("");
   return (
     <Screen>
-      <AppTextInput placeholder="First name" />
+      <AppTextInput placeholder="First name" icon="email" />
     </Screen>
   );
 }
