@@ -5,6 +5,7 @@ import {
   TextInput,
   Platform,
   TouchableWithoutFeedback,
+  Modal,
 } from "react-native";
 
 import { MaterialCommunityIcons } from "@expo/vector-icons";
@@ -32,6 +33,7 @@ function AppPicker({ icon, placeholder, ...otherprops }) {
           />
         </View>
       </TouchableWithoutFeedback>
+      <Modal visible={true}></Modal>
     </React.Fragment>
   );
 }
