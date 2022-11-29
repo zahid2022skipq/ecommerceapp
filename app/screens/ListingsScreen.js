@@ -25,7 +25,9 @@ function ListingsScreen(props) {
       <FlatList
         data={listings}
         keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => <Card />}
+        renderItem={({ item }) => (
+          <Card title={item.title} subTitle={item.price} image={item.image} />
+        )}
       />
     </Screen>
   );
