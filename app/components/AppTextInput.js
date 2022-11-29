@@ -8,7 +8,7 @@ function AppTextInput({ icon, ...otherprops }) {
   return (
     <View style={styles.container}>
       {icon && <MaterialCommunityIcons name={icon} />}
-      <TextInput placeholder={...otherprops} />
+      <TextInput {...otherprops} />
     </View>
   );
 }
