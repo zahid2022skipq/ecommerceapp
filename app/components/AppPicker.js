@@ -15,7 +15,7 @@ import { colors } from "../config/colors";
 import AppText from "./AppText";
 import PickerItem from "./PickerItem";
 
-function AppPicker({ icon, items, placeholder }) {
+function AppPicker({ icon, data, placeholder }) {
   const [modalVisible, setModalVisible] = useState(false);
   return (
     <React.Fragment>
@@ -40,13 +40,10 @@ function AppPicker({ icon, items, placeholder }) {
       <Modal visible={modalVisible} animationType="fade">
         <Button title="Close" onPress={() => setModalVisible(false)} />
         <FlatList
-          data={items}
+          data={data}
           keyExtractor={(item) => item.value.toString()}
           renderItem={({ item }) => (
-            <PickerItem
-              label={item.label}
-              onPress={() => console.log(item.value)}
-            />
+            <PickerItem label={item.label} onPress={() => console.log(item)} />
           )}
         />
       </Modal>
