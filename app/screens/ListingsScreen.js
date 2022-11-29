@@ -2,6 +2,7 @@ import React from "react";
 import { FlatList, StyleSheet } from "react-native";
 
 import Screen from "../components/Screen";
+import Card from "../components/Card";
 
 const listings = [
   {
@@ -21,7 +22,11 @@ const listings = [
 function ListingsScreen(props) {
   return (
     <Screen>
-      <FlatList data={listings} keyExtractor={(item) => item.id} />
+      <FlatList
+        data={listings}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => <Card />}
+      />
     </Screen>
   );
 }
