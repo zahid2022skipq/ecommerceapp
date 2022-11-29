@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { StyleSheet, Text, TextInput, View } from "react-native";
 import Icon from "./app/components/Icon";
 import ListItem from "./app/components/ListItem";
@@ -15,9 +16,14 @@ import MessagesScreen from "./app/screens/MessagesScreen";
 // </View>
 
 export default function App() {
+  const [fisrtName, setFirstName] = useState("");
   return (
     <Screen>
-      <TextInput />
+      <Text>{fisrtName}</Text>
+      <TextInput
+        placeholder="first name"
+        onChangeText={(text) => setFirstName(text)}
+      />
     </Screen>
   );
 }
