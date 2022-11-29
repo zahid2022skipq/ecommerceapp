@@ -21,7 +21,7 @@ const listings = [
 function ListingsScreen(props) {
   return (
     <Screen>
-      <FlatList />
+      <FlatList data={listings} keyExtractor={(item) => item.id} />
     </Screen>
   );
 }
