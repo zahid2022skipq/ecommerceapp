@@ -4,11 +4,11 @@ import { View, StyleSheet, TextInput, Platform } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { colors } from "../config/colors";
 
-function AppTextInput({ icon }) {
+function AppTextInput({ icon, ...otherprops }) {
   return (
     <View style={styles.container}>
       {icon && <MaterialCommunityIcons name={icon} />}
-      <TextInput />
+      <TextInput placeholder={...otherprops} />
     </View>
   );
 }
