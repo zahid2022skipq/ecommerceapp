@@ -1,10 +1,15 @@
 import React from "react";
-import { View, StyleSheet, TextInput, Platform } from "react-native";
+import {
+  View,
+  StyleSheet,
+  TextInput,
+  Platform,
+  TouchableWithoutFeedback,
+} from "react-native";
 
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { colors } from "../config/colors";
 import AppText from "./AppText";
-import { TouchableWithoutFeedback } from "react-native-gesture-handler";
 
 function AppPicker({ icon, placeholder, ...otherprops }) {
   return (
