@@ -5,7 +5,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { colors } from "../config/colors";
 import AppText from "./AppText";
 
-function AppPicker({ icon, ...otherprops }) {
+function AppPicker({ icon, placeholder, ...otherprops }) {
   return (
     <View style={styles.container}>
       {icon && (
@@ -16,7 +16,7 @@ function AppPicker({ icon, ...otherprops }) {
           style={styles.icon}
         />
       )}
-      <AppText></AppText>
+      <AppText>{placeholder}</AppText>
     </View>
   );
 }
