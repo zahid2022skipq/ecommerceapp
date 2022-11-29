@@ -3,6 +3,7 @@ import { View, StyleSheet, TextInput, Platform } from "react-native";
 
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { colors } from "../config/colors";
+import AppText from "./AppText";
 
 function AppPicker({ icon, ...otherprops }) {
   return (
@@ -15,7 +16,7 @@ function AppPicker({ icon, ...otherprops }) {
           style={styles.icon}
         />
       )}
-      <TextInput {...otherprops} />
+      <AppText></AppText>
     </View>
   );
 }
