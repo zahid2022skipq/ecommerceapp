@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   StyleSheet,
@@ -13,9 +13,10 @@ import { colors } from "../config/colors";
 import AppText from "./AppText";
 
 function AppPicker({ icon, placeholder, ...otherprops }) {
+  const [modalVisible, setModalVisible] = useState(false);
   return (
     <React.Fragment>
-      <TouchableWithoutFeedback onPress={() => console.log("tapped")}>
+      <TouchableWithoutFeedback onPress={() => setModalVisible(!modalVisible)}>
         <View style={styles.container}>
           {icon && (
             <MaterialCommunityIcons
