@@ -6,7 +6,7 @@ import AppText from "./AppText";
 function ErrorMessage({ error }) {
   if (!error) return null;
 
-  return <AppText>{error}</AppText>;
+  return <AppText style={styles.error}>{error}</AppText>;
 }
 
 const styles = StyleSheet.create({
