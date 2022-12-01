@@ -6,7 +6,6 @@ import Screen from "../components/Screen";
 import AppButton from "../components/AppButton";
 import { Formik } from "formik";
 import * as Yup from "yup";
-import AppText from "../components/AppText";
 import ErrorMessage from "../components/ErrorMessage";
 
 const validationSchema = Yup.object().shape({
