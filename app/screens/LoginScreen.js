@@ -28,7 +28,10 @@ function LoginScreen(props) {
         textContentType="password"
       />
 
-      <AppButton title="Login" onPress={() => console.log(email, password)} />
+      <AppButton
+        title="Login"
+        handleBtn={() => console.log("Email ", email, " Pass ", password)}
+      />
     </Screen>
   );
 }
