@@ -43,7 +43,7 @@ function LoginScreen(props) {
               secureTextEntry
               textContentType="password"
             />
-            <AppText>{errors.password}</AppText>
+            <AppText style={{ color: "red" }}>{errors.password}</AppText>
 
             <AppButton title="Login" handleBtn={handleSubmit} />
           </>
