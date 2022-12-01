@@ -21,9 +21,9 @@ function LoginScreen(props) {
         autoCorrect={false}
         autoCapitalize="none"
         icon="lock"
-        textContentType="password"
         placeholder="Password"
         secureTextEntry
+        textContentType="password"
       />
     </Screen>
   );
