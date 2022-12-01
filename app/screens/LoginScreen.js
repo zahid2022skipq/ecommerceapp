@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Image, StyleSheet } from "react-native";
 import AppTextInput from "../components/AppTextInput";
 import Screen from "../components/Screen";
-
+import AppButton from "../components/AppButton";
 function LoginScreen(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -27,6 +27,8 @@ function LoginScreen(props) {
         secureTextEntry
         textContentType="password"
       />
+
+      <AppButton />
     </Screen>
   );
 }
