@@ -23,7 +23,7 @@ function LoginScreen(props) {
               autoCapitalize="none"
               icon="email"
               keyboardType="email-address"
-              onChangeText={(text) => setEmail(text)}
+              onChangeText={handleChange("email")}
               placeholder="Email"
             />
             <AppTextInput
