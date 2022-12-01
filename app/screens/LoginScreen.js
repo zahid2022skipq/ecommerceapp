@@ -6,7 +6,7 @@ import Screen from "../components/Screen";
 function LoginScreen(props) {
   return (
     <Screen>
-      <Image source={require("../assets/logo-red.png")} />
+      <Image style={styles.logo} source={require("../assets/logo-red.png")} />
     </Screen>
   );
 }
