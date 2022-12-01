@@ -11,6 +11,14 @@ function LoginScreen(props) {
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  logo: {
+    height: 80,
+    width: 80,
+    alignSelf: "center",
+    marginTop: 50,
+    marginBottom: 20,
+  },
+});
 
 export default LoginScreen;
