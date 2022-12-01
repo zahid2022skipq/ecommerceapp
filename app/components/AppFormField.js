@@ -12,7 +12,7 @@ function AppFormField({ name }) {
         onChangeText={handleChange(name)}
         // placeholder="Email"
       />
-      <ErrorMessage error={errors.email} visible={touched.email} />
+      <ErrorMessage error={errors[name]} visible={touched[name]} />
     </>
   );
 }
