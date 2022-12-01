@@ -35,7 +35,7 @@ function LoginScreen(props) {
               placeholder="Email"
             />
 
-            <AppTextInput
+            <AppFormField
               autoCorrect={false}
               autoCapitalize="none"
               icon="lock"
