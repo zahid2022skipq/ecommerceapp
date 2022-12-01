@@ -8,7 +8,13 @@ function LoginScreen(props) {
   return (
     <Screen>
       <Image style={styles.logo} source={require("../assets/logo-red.png")} />
-      <AppTextInput />
+      <AppTextInput
+        autoCorrect={false}
+        autoCapitalize="none"
+        icon="email"
+        keyboardType="email-address"
+        placeholder="Email"
+      />
     </Screen>
   );
 }
