@@ -39,8 +39,7 @@ function LoginScreen(props) {
               autoCorrect={false}
               autoCapitalize="none"
               icon="lock"
-              onBlur={() => setFieldTouched("password")}
-              onChangeText={handleChange("password")}
+              name="password"
               placeholder="Password"
               secureTextEntry
               textContentType="password"
