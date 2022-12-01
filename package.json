@@ -17,7 +17,8 @@
     "react-native": "0.70.5",
     "react-native-gesture-handler": "^2.8.0",
     "react-native-swipeable": "^0.6.0",
-    "react-native-web": "^0.18.10"
+    "react-native-web": "^0.18.10",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
