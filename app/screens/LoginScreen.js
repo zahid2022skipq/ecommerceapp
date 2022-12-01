@@ -15,6 +15,14 @@ function LoginScreen(props) {
         keyboardType="email-address"
         placeholder="Email"
       />
+      <AppTextInput
+        autoCorrect={false}
+        autoCapitalize="none"
+        icon="lock"
+        textContentType="password"
+        placeholder="Password"
+        secureTextEntry
+      />
     </Screen>
   );
 }
