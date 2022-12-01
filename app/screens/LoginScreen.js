@@ -44,8 +44,6 @@ function LoginScreen(props) {
               secureTextEntry
               textContentType="password"
             />
-
-            <AppButton title="Login" handleBtn={handleSubmit} />
           </>
         )}
       </Formik>
