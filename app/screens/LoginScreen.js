@@ -31,13 +31,10 @@ function LoginScreen(props) {
               autoCapitalize="none"
               icon="email"
               keyboardType="email-address"
+              name="email"
               placeholder="Email"
             />
-            <AppTextInput
-              onBlur={() => setFieldTouched("email")}
-              onChangeText={handleChange("email")}
-            />
-            <ErrorMessage error={errors.email} visible={touched.email} />
+
             <AppTextInput
               autoCorrect={false}
               autoCapitalize="none"
