@@ -30,20 +30,22 @@ function LoginScreen(props) {
               autoCapitalize="none"
               icon="email"
               keyboardType="email-address"
+              onBlurr={() => setTouched("email")}
               onChangeText={handleChange("email")}
               placeholder="Email"
             />
-            <ErrorMessage error={errors.email} />
+            <ErrorMessage error={errors.email} visible={touched.email} />
             <AppTextInput
               autoCorrect={false}
               autoCapitalize="none"
               icon="lock"
+              onBlurr={() => setTouched("password")}
               onChangeText={handleChange("password")}
               placeholder="Password"
               secureTextEntry
               textContentType="password"
             />
-            <ErrorMessage error={errors.password} />
+            <ErrorMessage error={errors.password} visible={touched.password} />
 
             <AppButton title="Login" handleBtn={handleSubmit} />
           </>
