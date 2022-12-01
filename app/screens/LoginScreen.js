@@ -28,7 +28,7 @@ function LoginScreen(props) {
         textContentType="password"
       />
 
-      <AppButton />
+      <AppButton title="Login" onClick={() => console.log(email, password)} />
     </Screen>
   );
 }
