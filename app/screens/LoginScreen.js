@@ -30,7 +30,7 @@ function LoginScreen(props) {
               autoCorrect={false}
               autoCapitalize="none"
               icon="lock"
-              onChangeText={(text) => setPassword(text)}
+              onChangeText={handleChange("password")}
               placeholder="Password"
               secureTextEntry
               textContentType="password"
