@@ -36,10 +36,7 @@ function LoginScreen(props) {
               textContentType="password"
             />
 
-            <AppButton
-              title="Login"
-              handleBtn={() => console.log("Email ", email, " Pass ", password)}
-            />
+            <AppButton title="Login" handleBtn={handleSubmit} />
           </>
         )}
       </Formik>
