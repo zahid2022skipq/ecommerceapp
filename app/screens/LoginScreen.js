@@ -15,30 +15,34 @@ function LoginScreen(props) {
       <Formik
         initialValues={{ email: "", password: "" }}
         onSubmit={(values) => console.log(values)}
-      ></Formik>
+      >
+        {({ handleChange, handleSubmit }) => (
+          <>
+            <AppTextInput
+              autoCorrect={false}
+              autoCapitalize="none"
+              icon="email"
+              keyboardType="email-address"
+              onChangeText={(text) => setEmail(text)}
+              placeholder="Email"
+            />
+            <AppTextInput
+              autoCorrect={false}
+              autoCapitalize="none"
+              icon="lock"
+              onChangeText={(text) => setPassword(text)}
+              placeholder="Password"
+              secureTextEntry
+              textContentType="password"
+            />
 
-      <AppTextInput
-        autoCorrect={false}
-        autoCapitalize="none"
-        icon="email"
-        keyboardType="email-address"
-        onChangeText={(text) => setEmail(text)}
-        placeholder="Email"
-      />
-      <AppTextInput
-        autoCorrect={false}
-        autoCapitalize="none"
-        icon="lock"
-        onChangeText={(text) => setPassword(text)}
-        placeholder="Password"
-        secureTextEntry
-        textContentType="password"
-      />
-
-      <AppButton
-        title="Login"
-        handleBtn={() => console.log("Email ", email, " Pass ", password)}
-      />
+            <AppButton
+              title="Login"
+              handleBtn={() => console.log("Email ", email, " Pass ", password)}
+            />
+          </>
+        )}
+      </Formik>
     </Screen>
   );
 }
