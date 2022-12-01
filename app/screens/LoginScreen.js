@@ -23,7 +23,7 @@ function LoginScreen(props) {
         onSubmit={(values) => console.log(values)}
         validationSchema={validationSchema}
       >
-        {({ handleChange, handleSubmit, errors }) => (
+        {({ handleChange, handleSubmit, errors, setTouched, touched }) => (
           <>
             <AppTextInput
               autoCorrect={false}
