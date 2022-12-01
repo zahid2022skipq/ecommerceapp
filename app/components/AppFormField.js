@@ -3,18 +3,14 @@ import { useFormikContext } from "formik";
 
 import AppTextInput from "./AppTextInput";
 
-function AppFormField({ name }) {
+function AppFormField({ name, ...otherProps }) {
   const { setFieldTouched, handleChange, errors, touched } = useFormikContext();
   return (
     <>
       <AppTextInput
-        // autoCorrect={false}
-        // autoCapitalize="none"
-        // icon="email"
-        // keyboardType="email-address"
         onBlur={() => setFieldTouched(name)}
         onChangeText={handleChange(name)}
-        // placeholder="Email"
+        {...otherProps}
       />
       <ErrorMessage error={errors[name]} visible={touched[name]} />
     </>
