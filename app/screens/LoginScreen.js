@@ -20,8 +20,9 @@ function LoginScreen(props) {
       <Formik
         initialValues={{ email: "", password: "" }}
         onSubmit={(values) => console.log(values)}
+        validationSchema={validationSchema}
       >
-        {({ handleChange, handleSubmit }) => (
+        {({ handleChange, handleSubmit, errors }) => (
           <>
             <AppTextInput
               autoCorrect={false}
