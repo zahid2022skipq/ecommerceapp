@@ -33,7 +33,7 @@ function LoginScreen(props) {
               onChangeText={handleChange("email")}
               placeholder="Email"
             />
-            <AppText>{errors.email}</AppText>
+            <AppText style={{ color: "red" }}>{errors.email}</AppText>
             <AppTextInput
               autoCorrect={false}
               autoCapitalize="none"
