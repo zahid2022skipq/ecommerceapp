@@ -15,12 +15,14 @@ function LoginScreen(props) {
         autoCapitalize="none"
         icon="email"
         keyboardType="email-address"
+        onChangeText={(text) => setEmail(text)}
         placeholder="Email"
       />
       <AppTextInput
         autoCorrect={false}
         autoCapitalize="none"
         icon="lock"
+        onChangeText={(text) => setPassword(text)}
         placeholder="Password"
         secureTextEntry
         textContentType="password"
