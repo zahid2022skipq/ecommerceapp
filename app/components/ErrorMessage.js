@@ -9,6 +9,10 @@ function ErrorMessage({ error }) {
   return <AppText>{error}</AppText>;
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  error: {
+    color: "red",
+  },
+});
 
 export default ErrorMessage;
