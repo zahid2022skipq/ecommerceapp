@@ -1,10 +1,14 @@
 import React from "react";
 
-import { StyleSheet } from "react-native";
+import { Image, StyleSheet } from "react-native";
 import Screen from "../components/Screen";
 
 function LoginScreen(props) {
-  return <Screen></Screen>;
+  return (
+    <Screen>
+      <Image />
+    </Screen>
+  );
 }
 
 const styles = StyleSheet.create({});
