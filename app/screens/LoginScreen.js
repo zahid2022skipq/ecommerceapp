@@ -14,8 +14,8 @@ function LoginScreen(props) {
         autoCorrect={false}
         autoCapitalize="none"
         icon="email"
-        keyboardType="email-address"
         placeholder="Email"
+        keyboardType="email-address"
       />
       <AppTextInput
         autoCorrect={false}
