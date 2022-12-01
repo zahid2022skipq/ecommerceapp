@@ -7,4 +7,6 @@ function ErrorMessage(props) {
   return <AppText></AppText>;
 }
 
+const styles = StyleSheet.create({});
+
 export default ErrorMessage;
