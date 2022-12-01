@@ -4,12 +4,19 @@ import { Image, StyleSheet } from "react-native";
 import AppTextInput from "../components/AppTextInput";
 import Screen from "../components/Screen";
 import AppButton from "../components/AppButton";
+import { Formik } from "formik";
 function LoginScreen(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   return (
     <Screen style={styles.conatianer}>
       <Image style={styles.logo} source={require("../assets/logo-red.png")} />
+
+      <Formik
+        initialValues={{ email: "", password: "" }}
+        onSubmit={(values) => console.log(values)}
+      ></Formik>
+
       <AppTextInput
         autoCorrect={false}
         autoCapitalize="none"
