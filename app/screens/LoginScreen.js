@@ -30,7 +30,7 @@ function LoginScreen(props) {
               autoCapitalize="none"
               icon="email"
               keyboardType="email-address"
-              onBlurr={() => setTouched("email")}
+              onBlur={() => setTouched("email")}
               onChangeText={handleChange("email")}
               placeholder="Email"
             />
@@ -39,7 +39,7 @@ function LoginScreen(props) {
               autoCorrect={false}
               autoCapitalize="none"
               icon="lock"
-              onBlurr={() => setTouched("password")}
+              onBlur={() => setTouched("password")}
               onChangeText={handleChange("password")}
               placeholder="Password"
               secureTextEntry
