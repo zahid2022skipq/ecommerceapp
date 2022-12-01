@@ -6,6 +6,7 @@ import Screen from "../components/Screen";
 
 function LoginScreen(props) {
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   return (
     <Screen>
       <Image style={styles.logo} source={require("../assets/logo-red.png")} />
