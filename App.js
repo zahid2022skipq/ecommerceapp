@@ -9,7 +9,7 @@ import AccountScreen from "./app/screens/AccountScreen";
 import ListingsScreen from "./app/screens/ListingsScreen";
 import LoginScreen from "./app/screens/LoginScreen";
 import MessagesScreen from "./app/screens/MessagesScreen";
-
+import ListingsEditScreen from "./app/screens/ListingsEditScreen";
 // <View style={{ backgroundColor: "#f8f4f4", padding: 20, paddingTop: 100 }}>
 // <Card
 //   title="Red Jacket for sell"
@@ -21,7 +21,7 @@ import MessagesScreen from "./app/screens/MessagesScreen";
 export default function App() {
   return (
     <Screen>
-      <LoginScreen />
+      <ListingsEditScreen />
     </Screen>
   );
 }

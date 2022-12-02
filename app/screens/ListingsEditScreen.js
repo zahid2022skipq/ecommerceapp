@@ -7,7 +7,7 @@ import {
   AppFormField as FormField,
   AppFormPicker as Picker,
   SubmitButton,
-} from "../components/forms";
+} from "../components/form";
 import Screen from "../components/Screen";
 
 const validationSchema = Yup.object().shape({
