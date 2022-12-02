@@ -1,7 +1,7 @@
 import React from "react";
 import { Formik } from "formik";
 
-function AppForm(props) {
+function AppForm({ initialValues, onSubmit, validationSchema }) {
   return (
     <Formik
       initialValues={{ email: "", password: "" }}
