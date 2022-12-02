@@ -24,7 +24,11 @@ function ListItem({
             <AppText style={styles.title} numberOfLines={1}>
               {title}
             </AppText>
-            {subTitle && <AppText style={styles.subTitle}>{subTitle}</AppText>}
+            {subTitle && (
+              <AppText style={styles.subTitle} numberOfLines={2}>
+                {subTitle}
+              </AppText>
+            )}
           </View>
           <MaterialCommunityIcons
             color={colors.mediumGray}
