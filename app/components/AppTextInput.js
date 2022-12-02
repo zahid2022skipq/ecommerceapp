@@ -15,7 +15,7 @@ function AppTextInput({ icon, width = "100%", ...otherprops }) {
           style={styles.icon}
         />
       )}
-      <TextInput {...otherprops} />
+      <TextInput style={{ width: "100%" }} {...otherprops} />
     </View>
   );
 }
