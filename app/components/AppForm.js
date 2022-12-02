@@ -4,8 +4,8 @@ import { Formik } from "formik";
 function AppForm({ initialValues, onSubmit, validationSchema }) {
   return (
     <Formik
-      initialValues={{ email: "", password: "" }}
-      onSubmit={(values) => console.log(values)}
+      initialValues={initialValues}
+      onSubmit={onSubmit}
       validationSchema={validationSchema}
     ></Formik>
   );
