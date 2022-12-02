@@ -5,7 +5,7 @@ import { Formik } from "formik";
 import * as Yup from "yup";
 
 import AppFormField from "../components/form/AppFormField";
-import SubmitButton from "../components/SubmitButton";
+import SubmitButton from "../components/form/SubmitButton";
 import Screen from "../components/Screen";
 import AppForm from "../components/form/AppForm";
 
