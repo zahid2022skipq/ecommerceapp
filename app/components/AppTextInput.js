@@ -4,7 +4,7 @@ import { View, StyleSheet, TextInput, Platform } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { colors } from "../config/colors";
 
-function AppTextInput({ icon, ...otherprops }) {
+function AppTextInput({ icon, width, ...otherprops }) {
   return (
     <View style={styles.container}>
       {icon && (
