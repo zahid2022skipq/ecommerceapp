@@ -9,7 +9,6 @@ function AppFormField({ name, ...otherProps }) {
   return (
     <>
       <AppTextInput
-        style={{ width: "90%" }}
         onBlur={() => setFieldTouched(name)}
         onChangeText={handleChange(name)}
         {...otherProps}
