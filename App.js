@@ -21,7 +21,7 @@ import ListingsEditScreen from "./app/screens/ListingsEditScreen";
 export default function App() {
   return (
     <Screen>
-      <ListingsEditScreen />
+      <ListItem />
     </Screen>
   );
 }
