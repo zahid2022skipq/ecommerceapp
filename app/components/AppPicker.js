@@ -32,7 +32,7 @@ function AppPicker({ icon, data, selectedItem, placeholder, onSelectItem }) {
           {selectedItem ? (
             <AppText style={styles.text}>{selectedItem.label}</AppText>
           ) : (
-            <AppText>{placeholder}</AppText>
+            <AppText style={styles.placeholder}>{placeholder}</AppText>
           )}
 
           <MaterialCommunityIcons
@@ -78,6 +78,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
   },
+  placeholder: {},
   text: {
     flex: 1,
   },
