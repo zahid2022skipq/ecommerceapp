@@ -2,11 +2,7 @@ import React from "react";
 import { Text, StyleSheet, Platform } from "react-native";
 
 function AppText({ children, style, numberOfLines }) {
-  return (
-    <Text numberOfLines={numberOfLines} style={[styles.text, style]}>
-      {children}
-    </Text>
-  );
+  return <Text style={[styles.text, style]}>{children}</Text>;
 }
 
 const styles = StyleSheet.create({
