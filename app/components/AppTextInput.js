@@ -6,7 +6,7 @@ import { colors } from "../config/colors";
 
 function AppTextInput({ icon, width = "100%", ...otherprops }) {
   return (
-    <View style={[styles.container, { width }]}>
+    <View style={[styles.container, { width: width }]}>
       {icon && (
         <MaterialCommunityIcons
           name={icon}
