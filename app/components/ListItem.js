@@ -33,6 +33,7 @@ function ListItem({
 
 const styles = StyleSheet.create({
   container: {
+    alignItems: "center",
     flexDirection: "row",
     padding: 15,
     backgroundColor: colors.white,
