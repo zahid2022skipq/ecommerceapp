@@ -78,7 +78,10 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
   },
-  placeholder: {},
+  placeholder: {
+    color: colors.mediumGray,
+    flex: 1,
+  },
   text: {
     flex: 1,
   },
