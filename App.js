@@ -21,7 +21,7 @@ const categories = [
 export default function App() {
   return (
     <Screen>
-      <AppPicker />
+      <AppPicker data={categories} />
     </Screen>
   );
 }

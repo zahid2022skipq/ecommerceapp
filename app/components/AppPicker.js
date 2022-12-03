@@ -54,7 +54,7 @@ function AppPicker({
           data={data}
           keyExtractor={(item) => item.value.toString()}
           renderItem={({ item }) => (
-            <PickerItem
+            <PickerItemComponent
               label={item.label}
               onPress={() => {
                 setModalVisible(false);
