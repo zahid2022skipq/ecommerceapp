@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {
   View,
   StyleSheet,
-  TextInput,
   Platform,
   TouchableWithoutFeedback,
   Modal,
@@ -15,7 +14,14 @@ import { colors } from "../config/colors";
 import AppText from "./AppText";
 import PickerItem from "./PickerItem";
 
-function AppPicker({ icon, data, selectedItem, placeholder, onSelectItem }) {
+function AppPicker({
+  icon,
+  data,
+  selectedItem,
+  placeholder,
+  onSelectItem,
+  PickerItemComponent = PickerItem,
+}) {
   const [modalVisible, setModalVisible] = useState(false);
   return (
     <React.Fragment>
